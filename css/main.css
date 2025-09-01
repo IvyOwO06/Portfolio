@@ -1,0 +1,131 @@
+:root {
+    --background-color: #9f3fbf;
+    --background-color2: #253759;
+    --text-color: #ffffff;
+    --button-color: #5e5ba6;
+    --button-color2: #8e5019;
+    --button-text-color: #000000;
+    --secondarybutton-color: #b86ad9;
+    --white-transparent: #eeeeee50;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(var(--background-color), var(--background-color2));
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    overflow: auto;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "ubuntu";
+    src: url("../fonts/Ubuntu-Medium.ttf") format("opentype");
+}
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+#TopBar {
+    background-color: var(--header-color);
+    padding: 15px;
+    text-align: center;
+    color: var(--text-color);
+    width: 100vw;
+}
+#TopBar h1 {
+    font-family: "ubuntu", sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 0;
+}
+#projectsbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    padding-top: 0px;
+}
+.projects {
+    flex: 1 1 calc(50% - 25px);
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--white-transparent);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+.projects img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 100ms ease, background-color 50ms ease;
+    transform: scale(0.9);
+}
+.projects img:hover {
+    transform: scale(0.95);
+}
+.button {
+    text-align: center;
+}
+.button a {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: var(--button-color2);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.1s ease-in;
+}
+.button a:hover {
+    background-color: var(--secondarybutton-color);
+    color: var(--text-color);
+}
+.centered-text {
+    text-align: center;
+}
+#WebsiteInformation {
+    width: 500px;
+    overflow: hidden;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .projects {
+        flex: 1 1 100%;
+    }
+}
+#steve {
+    color: var(--background-color);
+    width: min-content;
+}
+#steve:hover {
+    color: var(--header-color);
+}
+footer {
+    background-color: var(--header-color);
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
