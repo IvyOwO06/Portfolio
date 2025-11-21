@@ -115,13 +115,6 @@ li {
         flex: 1 1 100%;
     }
 }
-#steve {
-    color: var(--background-color);
-    width: min-content;
-}
-#steve:hover {
-    color: var(--header-color);
-}
 footer {
     background-color: var(--header-color);
     padding: 10px;
