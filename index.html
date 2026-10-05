@@ -1,136 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="author" content="Sam Delhaye" />
-        <link rel="icon" type="image/x-icon" href="img/something.png">
-        <link rel="stylesheet" href="css/main.css">
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <div id="TopBar">
-            <h1>Sam Delhaye</h1>
-        </div>
-        <div id="content">
-            <p class="centered-text">
-                My name is Sam Delhaye and I am currently studying at Ter AA in
-                Helmond, Full-stack. I am currently a second year student.
-                <br />
-                I am passionate about web development and I love learning new
-                coding languages.
-                <br /><br />
-                I am experienced in PHP, HTML, CSS and SQL.
-                <br />
-                JS and Python are still somewhat new to me, but I'm still
-                learning them.
-            </p>
-            <div class="button">
-                <a href="files/cv.pdf" target="_blank">My CV</a>
-            </div><br><br>
-            <div class="button">
-                <a href="repos.html">Github Repositories</a>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sam Delhaye">
+    <meta name="description" content="Sam Delhaye's portfolio: web development, experiments, and selected projects.">
+    <link rel="icon" type="image/x-icon" href="img/something.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Sam Delhaye — Portfolio</title>
+</head>
+<body>
+    <div class="starfield" aria-hidden="true"><span class="star-layer star-layer-small"></span><span class="star-layer star-layer-medium"></span><span class="star-layer star-layer-large"></span></div>
+    <header class="site-header">
+        <a class="brand" href="index.html">SAM<span>.</span></a>
+        <nav class="nav" aria-label="Hoofdnavigatie">
+            <a href="#projects" data-i18n="navProjects">Projecten</a>
+            <a href="repos.html">GitHub</a>
+            <a class="nav-cta" href="files/cv.pdf" target="_blank" rel="noreferrer" data-i18n="viewCv">Bekijk cv ↗</a>
+            <div class="language-switch" role="group" aria-label="Kies taal"><button type="button" data-language="nl" aria-pressed="true">NL</button><button type="button" data-language="en" aria-pressed="false">EN</button></div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="eyebrow" data-i18n="heroEyebrow">Ontwikkelaar · Student · Maker</div>
+            <h1 data-i18n="heroTitle">Hoi, ik ben Sam.<br>Ik bouw dingen voor <em>het web.</em></h1>
+            <p class="hero-copy" data-i18n="heroCopy">Ik studeer full-stack development aan Ter AA in Helmond. Ik vind het leuk om ideeën om te zetten in bruikbare, doordachte digitale ervaringen en bij elk project iets nieuws te leren.</p>
+            <div class="hero-actions">
+                <a class="pill pill-primary" href="#projects" data-i18n="exploreWork">Bekijk mijn werk ↓</a>
+                <a class="pill pill-secondary" href="https://github.com/IvyOwO06" target="_blank" rel="noreferrer" data-i18n="githubProfile">GitHub-profiel ↗</a>
             </div>
-            <h2 class="centered-text">Projects</h2>
-            <p class="centered-text">These are some websites I've been working on</p>
-            <p class="centered-text">
-                I've also done some projects with Python, which you can check out on the GitHub Repositories page 
-                <br> 
-                along with the rest of the repositories
-            </p>
-            <br />
-            <div id="projectsbox">
-                <div class="projects">
-                    <div class="button">
-                        <a href="/gameworld/project/" target="_blank">GameWorld (Webshop)</a>
-                    </div>
-                    <div>
-                        <a href="/gameworld/project/" target="_blank">
-                            <img src="img/gameworld.png" />
-                        </a>
-                    </div>
-                    <div id="WebsiteInformation">
-                        <p>A "Webshop" with all the information retrieved from a database using phpMyAdmin which uses PHP to get all the information. It also includes an account system and cart system using sessions.</p>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="button">
-                        <a href="/radiogaga/radiogaga/" target="_blank">RadioGaga (Music Player)</a>
-                    </div>
-                    <div>
-                        <a href="/radiogaga/radiogaga/" target="_blank">
-                            <img src="img/radiogaga.png" />
-                        </a>
-                    </div>
-                    <div id="WebsiteInformation">
-                        <p>A music player with all the information retrieved from a database using PHP.</p>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="button">
-                        <a href="/Github/MapTestSpaceGame/index.html" target="_blank">Game Map (WIP)</a>
-                    </div>
-                    <div>
-                        <a href="/Github/MapTestSpaceGame/index.html" target="_blank">
-                            <img src="img/map.jpg" />
-                        </a>
-                    </div>
-                    <div id="WebsiteInformation">
-                        <p>A map of a game using JavaScript and a canvas, with data retrieved from a JSON file. i made this project with a friend of mine</p>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="button">
-                        <a href="/Github/dnd_above_and_beyond/" target="_blank">Dungeons and Monsters (WIP)</a>
-                    </div>
-                    <div>
-                        <a href="/Github/dnd_above_and_beyond/" target="_blank">
-                            <img src="img/dnm.png">
-                        </a>
-                        <div id="WebsiteInformation">
-                            <p>A sort of DIY version of D&D beyond, i made this with a few friends</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="button">
-                        <a href="/finland/" target="_blank">Finland Persona</a>
-                    </div>
-                    <div>
-                        <a href="/finland/" target="_blank">
-                            <img src="img/finland.png">
-                        </a>
-                        <div id="WebsiteInformation">
-                            <p>To get the chance to come on a exchange trip to Finland <br>I had to make something creative, it could either be: a website, a poster, etc. It just had to be something creative, I chose a website </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="button">
-                        <a href="https://dashboard.qnimbus.nl" target="_blank">Qteco Dashboard</a>
-                    </div>
-                    <div>
-                        <a href="https://dashboard.qnimbus.nl" target="_blank">
-                            <img src="img/dashboard.png">
-                        </a>
-                        <div id="WebsiteInformation">
-                            <p>A dashboard site another intern and I made during our internship at Qteco</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="projects">
-                    <div class="button">
-                        <a href="https://rivag.nl" target="_blank">Rivag</a>
-                    </div>
-                    <div>
-                        <a href="https://rivag.nl" target="_blank">
-                            <img src="img/dashboard.png">
-                        </a>
-                        <div id="WebsiteInformation">
-                            <p>A website revision another intern and I did during our internship at Qteco</p>
-                        </div>
-                    </div>
-                </div> -->
+        </section>
+        <section class="intro-grid" aria-labelledby="about-title">
+            <div>
+                <div class="eyebrow" data-i18n="aboutEyebrow">Even voorstellen</div>
+                <h2 id="about-title" data-i18n="aboutTitle">Nieuwsgierig van nature.<br>Ontwikkelaar in de praktijk.</h2>
+                <p data-i18n="aboutCopy">Ik ben vooral geïnteresseerd in webontwikkeling en het bouwen van projecten met anderen. PHP, HTML, CSS en SQL ken ik goed; ook mijn vaardigheden in JavaScript en Python blijf ik ontwikkelen.</p>
             </div>
-        </div>
-        <footer>Sam Delhaye &copy; 2025</footer>
-    </body>
+            <div class="skills" aria-label="Technologies">
+                <span class="skill">PHP</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">SQL</span><span class="skill">JavaScript</span><span class="skill">Python</span>
+            </div>
+        </section>
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div><div class="eyebrow" data-i18n="selectedWork">Uitgelicht werk</div><h2 id="projects-title" data-i18n="projectsTitle">Projecten waaraan ik heb gewerkt</h2></div>
+                <a class="text-link" href="repos.html" data-i18n="browseRepos">Bekijk alle repositories ↗</a>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <a class="project-image" href="/gameworld/project/" target="_blank" rel="noreferrer"><img src="img/gameworld.png" alt="GameWorld webshop preview"></a>
+                    <div class="project-body"><div class="project-topline"><h3>GameWorld</h3><a class="arrow-link" href="https://github.com/IvyOwO06/GameWorld" target="_blank" rel="noreferrer" aria-label="GameWorld op GitHub">↗</a></div><p data-i18n="gameworldCopy">Een gamewebshop gekoppeld aan een database, met accounts en een winkelwagen op basis van PHP-sessies.</p><div class="tags"><span class="tag">PHP</span><span class="tag">SQL</span><span class="tag" data-i18n="webApp">Webapp</span></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image" href="/radiogaga/radiogaga/" target="_blank" rel="noreferrer"><img src="img/radiogaga.png" alt="RadioGaga music player preview"></a>
+                    <div class="project-body"><div class="project-topline"><h3>RadioGaga</h3><a class="arrow-link" href="https://github.com/IvyOwO06/radiogaga" target="_blank" rel="noreferrer" aria-label="RadioGaga op GitHub">↗</a></div><p data-i18n="radioCopy">Een muziekspeler die met PHP muziekinformatie uit een database ophaalt en weergeeft.</p><div class="tags"><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag" data-i18n="music">Muziek</span></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image number-preview" href="/guess-my-number/" target="_blank" rel="noreferrer" aria-label="Open Guess My Number project"><img src="img/guessMyNumber.png" alt=""></a>
+                    <div class="project-body"><div class="project-topline"><h3>Guess My Number</h3><a class="arrow-link" href="https://github.com/IvyOwO06/guess-my-number" target="_blank" rel="noreferrer" aria-label="Guess My Number op GitHub">↗</a></div><p data-i18n="guessCopy">Een getimed raadspel met meerdere moeilijkheidsniveaus, spelersaccounts en een scorebord.</p><div class="tags"><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">MySQL</span></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image crypto-preview" href="/cryptomania/project/" target="_blank" rel="noreferrer" aria-label="Open CryptoMania project"><img src="img/cryptomania.png" alt=""></a>
+                    <div class="project-body"><div class="project-topline"><h3>CryptoMania</h3><a class="arrow-link" href="https://github.com/IvyOwO06/cryptomania" target="_blank" rel="noreferrer" aria-label="CryptoMania op GitHub">↗</a></div><p data-i18n="cryptoCopy">Een dashboard voor cryptovaluta met actuele muntgegevens, beursinformatie, nieuws en een persoonlijke portfolio.</p><div class="tags"><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">API</span></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image rivag-preview" href="http://dev.qnimbus.nl" target="_blank" rel="noreferrer" aria-label="Open the Rivag project"><img src="img/rivag.png" alt=""></a>
+                    <div class="project-body"><div class="project-topline"><h3 data-i18n="rivagTitle">Rivag-website</h3><a class="arrow-link" href="http://dev.qnimbus.nl" target="_blank" rel="noreferrer" aria-label="Open Rivag-project in een nieuw tabblad">↗</a></div><p data-i18n="rivagCopy">Een tweetalige bedrijfswebsite gebouwd met October CMS, met informatie over het bedrijf en personeel, plus een contactgedeelte.</p><div class="tags"><span class="tag">October CMS</span><span class="tag">PHP</span><span class="tag">Twig</span></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image qteco-preview" href="/stage/Dashboard/" target="_blank" rel="noreferrer" aria-label="Open the local status dashboard"><img src="img/dashboard.png" alt=""></a>
+                    <div class="project-body"><div class="project-topline"><h3 data-i18n="dashboardTitle">Qteco-statusdashboard</h3><a class="arrow-link" href="/stage/Dashboard/" target="_blank" rel="noreferrer" aria-label="Open lokaal statusdashboard in een nieuw tabblad">↗</a></div><p data-i18n="dashboardCopy">Een live servicedashboard met filters voor statuscodes, serverstatistieken, thema-instellingen en automatisch vernieuwen.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">API</span></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image" href="/Github/MapTestSpaceGame/index.html" target="_blank" rel="noreferrer"><img src="img/map.jpg" alt="Game map project preview"></a>
+                    <div class="project-body"><div class="project-topline"><h3 data-i18n="gameMapTitle">Game Map</h3><a class="arrow-link" href="https://github.com/IvyOwO06/MapTestSpaceGame" target="_blank" rel="noreferrer" aria-label="Game Map op GitHub">↗</a></div><p data-i18n="gameMapCopy">Een gamekaart in ontwikkeling die wereldgegevens uit JSON laadt en op canvas wordt getekend. Gemaakt met een vriend.</p><div class="tags"><span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag" data-i18n="inProgress">In ontwikkeling</span></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image" href="/Github/dnd_above_and_beyond/" target="_blank" rel="noreferrer"><img src="img/dnm.png" alt="Dungeons and Monsters project preview"></a>
+                    <div class="project-body"><div class="project-topline"><h3>Dungeons &amp; Monsters</h3><a class="arrow-link" href="https://github.com/IvyOwO06/dnd_above_and_beyond" target="_blank" rel="noreferrer" aria-label="Dungeons and Monsters op GitHub">↗</a></div><p data-i18n="dndCopy">Een gezamenlijke, zelfgebouwde digitale hulp voor tabletop-personages en campagnes.</p><div class="tags"><span class="tag" data-i18n="webApp">Webapp</span><span class="tag" data-i18n="teamProject">Teamproject</span><span class="tag" data-i18n="inProgress">In ontwikkeling</span></div></div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><span>Sam Delhaye © 2026</span><a href="https://github.com/IvyOwO06" target="_blank" rel="noreferrer" data-i18n="findGithub">Bekijk mijn GitHub ↗</a></footer>
+    <script src="language.js" defer></script>
+</body>
 </html>
