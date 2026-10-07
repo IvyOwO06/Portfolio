@@ -263,6 +263,8 @@ h1, h2, h3, p { margin-top: 0; }
 .pill:hover { transform: translateY(-2px); }
 .pill-primary { background: var(--lime); color: #21142b; }
 .pill-secondary { border: 1px solid var(--line); color: var(--ink); }
+.cv-button { border-color: #a66bd3; }
+.cv-button:hover { border-color: var(--lime); }
 .intro-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 64px; padding: 42px 0 80px; border-top: 1px solid var(--line); }
 .intro-grid h2, .section-heading h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); letter-spacing: -.06em; line-height: 1.1; }
 .intro-grid p { color: var(--muted); }
@@ -291,10 +293,13 @@ h1, h2, h3, p { margin-top: 0; }
 .qteco-preview { background: linear-gradient(140deg, #35294b, #1b1728 58%, #44315f); }
 .rivag-preview span, .qteco-preview span { color: var(--lime); font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -.07em; }
 .rivag-preview small, .qteco-preview small { color: var(--muted); font: .62rem var(--mono); letter-spacing: .16em; }
-.project-body { padding: 22px 23px 24px; }
+.project-body { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 12px; padding: 22px 23px 24px; }
+.project-topline, .project-body > p { grid-column: 1 / -1; }
 .project-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .project-topline h3, .repo-card h3 { font-size: 1.15rem; margin: 0; letter-spacing: -.035em; }
 .arrow-link { color: var(--lime); font-size: 1.15rem; text-decoration: none; }
+.repo-button { display: inline-flex; align-items: center; justify-self: end; white-space: nowrap; padding: 8px 12px; border: 1px solid #8053a1; border-radius: 8px; color: var(--lime); font-size: .76rem; font-weight: 700; text-decoration: none; transition: background .2s, border-color .2s, transform .2s; }
+.repo-button:hover { transform: translateY(-1px); border-color: var(--lime); background: rgba(128, 83, 161, .16); }
 .project-body p, .repo-card p { margin: 12px 0 17px; color: var(--muted); font-size: .9rem; }
 .tags { display: flex; gap: 7px; flex-wrap: wrap; }
 .tag { color: var(--mint); background: #30223b; border-radius: 5px; padding: 4px 8px; font: .68rem var(--mono); }
